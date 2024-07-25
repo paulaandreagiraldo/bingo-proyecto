@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../Tablas mult/Tablas mult/bootstrap/css/bootstrap.css"> -->
+    <!-- falta el link de boostrap -->
+    <title>bingo</title>
+    <link rel="stylesheet" href="css/stilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4">Bingo del 2 con Bootstrap</h1>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>B</th>
+                    <th>I</th>
+                    <th>N</th>
+                    <th>G</th>
+                    <th>O</th>
+                </tr>
+            </thead>
+            <tbody id="bingo-table">
+                <!-- Aquí se generará el cartón del bingo -->
+
+            </tbody>
+        </table>
+        <button class="btn btn-primary" onclick="generarCarton()">Generar Cartón</button>
+        <button class="btn btn-primary" onclick="colorearFilas('colorear colomna B')">colorear colomna B</button>
+        <button class="btn btn-primary" onclick="colorearFilas('colorear colomna I')">colorear colomna I</button>
+        <button class="btn btn-primary" onclick="colorearFilas('colorear colomna N')">colorear colomna N</button>
+        <button class="btn btn-primary" onclick="colorearFilas('colorear colomna G')">colorear colomna G</button>
+        <button class="btn btn-primary" onclick="colorearFilas('colorear colomna O')">colorear colomna O</button>
+        <button class="btn btn-primary" onclick="colorearFilas('colorear X')">colorear x</button>
+        <button class="btn btn-primary" onclick="colorearFilas('colorear las tres X')">colorear las tres x</button>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
